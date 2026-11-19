@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Field Guide — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<header id="site-header">
+  <div id="brand-block">
+    <p id="brand-kicker">A field guide for trophy hunters</p>
+    <h1 id="brand-title">The Leonida Field Guide</h1>
+    <p id="brand-sub">Grand Theft Auto VI · PlayStation 5 · all 55 trophies, every guide cited</p>
+  </div>
+  <div id="header-stats">
+    <p id="stat-earned"><strong id="stat-earned-count">0 of 55</strong> earned</p>
+    <p id="stat-percent"><strong id="stat-percent-value">0%</strong> to platinum</p>
+    <p id="stat-grades">Platinum <span id="stat-grade-platinum">0/1</span> · Gold <span id="stat-grade-gold">0/2</span> · Silver <span id="stat-grade-silver">0/6</span> · Bronze <span id="stat-grade-bronze">0/46</span></p>
+    <div id="progress-bar" role="progressbar" aria-label="Progress to platinum"><div id="progress-bar-fill"></div></div>
+    <p id="stat-facts">Difficulty ≈ 4/10 · ≈ 200 hours · 1 playthrough · 0 online trophies · 1 possibly missable <span class="stat-facts-note">(estimates per PowerPyx, retrieved 2026-11-19)</span></p>
+  </div>
+  <div id="header-actions">
+    <label id="spoiler-toggle-label" class="toggle-label"><input type="checkbox" id="spoiler-toggle"> Spoiler mode</label>
+    <button id="export-btn" type="button">Export progress</button>
+    <button id="import-btn" type="button">Import progress</button>
+    <input type="file" id="import-file" accept="application/json" hidden>
+    <button id="reset-btn" type="button">Reset</button>
+  </div>
+</header>
+
+<nav id="view-tabs" aria-label="Guide views">
+  <button type="button" class="view-tab" data-view="checklist" id="tab-checklist">Checklist &amp; guides</button>
+  <button type="button" class="view-tab" data-view="roadmap" id="tab-roadmap">Roadmap to platinum</button>
+  <button type="button" class="view-tab" data-view="missables" id="tab-missables">Missables <span class="tab-badge" id="missables-badge">1</span></button>
+  <button type="button" class="view-tab" data-view="planner" id="tab-planner">Next up — planner</button>
+  <button type="button" class="view-tab" data-view="honesty" id="tab-honesty">Sources &amp; honesty</button>
+</nav>
+
+<div id="layout">
+  <main id="view-root" aria-live="polite"></main>
+  <aside id="guide-pane" aria-label="Trophy guide"></aside>
+</div>
+
+<footer id="site-footer">
+  <p>Original guide prose written for this entry; every fact names its source beside it, and anything unconfirmed at launch is labelled, never asserted. No Rockstar Games logos or artwork — the look and the words are this guide's own. Works fully offline; progress never leaves your browser unless you export it.</p>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
